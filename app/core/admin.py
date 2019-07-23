@@ -23,5 +23,7 @@ class UserAdmin(BaseUserAdmin):
             'fields': ('email', 'password1', 'password2')
         }),
     )
+
+
 admin.site.register(models.User, UserAdmin)
 # Register your models here.
